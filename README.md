@@ -6,7 +6,7 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #1F1F1F, #1F1F1F);
+      background: linear-gradient(135deg, #0C0C0C, #0C0C0C);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
@@ -23,7 +23,7 @@
 
     /* Estilo para a seção */
     .section {
-      background-color: #1F1F1F;
+      background-color: #2A2A2A;
       border: 2px solid rgba(255, 255, 255, 0.3); /* Borda branca transparente */
       border-radius: 10px;
       padding: 20px;
