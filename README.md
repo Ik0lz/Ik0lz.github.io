@@ -1,4 +1,3 @@
-<title>ROBLOX EXTERNALS & EXECUTORS</title>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +6,7 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #302F2F 0%, #302F2F 100%);
+      background: linear-gradient(135deg, #262626 0%, #262626 100%);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
@@ -71,7 +70,7 @@
     .scale-up {
       width: 250px;
       height: auto;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
       border-radius: 10px;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
     }
@@ -79,6 +78,7 @@
     .scale-up:hover {
       transform: scale(1.1) rotate(5deg);
       box-shadow: 0px 8px 25px rgba(255, 126, 95, 0.6);
+      filter: brightness(0.8); /* Escurece a imagem ao passar o mouse */
     }
 
     .image-container {
@@ -102,6 +102,11 @@
     .btn:hover {
       background-color: #f1f1f1;
       transform: scale(1.05);
+    }
+
+    /* Efeito de cor roxa ao passar o mouse sobre as imagens */
+    .image-container:hover .scale-up {
+      filter: brightness(0.5); /* Escurece a imagem */
     }
 
     /* Responsivo */
@@ -174,8 +179,6 @@
 
 </body>
 </html>
-
-
 
 
 
