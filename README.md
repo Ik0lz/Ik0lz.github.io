@@ -1,12 +1,13 @@
+<title>ROBLOX EXTERNALS & EXECUTORS</title>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROBLOX EXTERNALS & EXECUTORS  </title>
+  <title>ROBLOX EXTERNALS & EXECUTORS</title>
 
   <style>
     body {
-      background: linear-gradient(135deg, #010101 0%, #010101 100%);
+      background: linear-gradient(135deg, #302F2F 0%, #302F2F 100%);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
@@ -173,7 +174,3 @@
 
 </body>
 </html>
-
-
-
-
