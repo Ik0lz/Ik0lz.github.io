@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROBLOX EXTERNALS & EXECUTORS </title>
+  <title>Executors & Externals</title>
 
   <style>
     body {
@@ -170,7 +170,7 @@
           <img src="https://github.com/user-attachments/assets/e7b72dd9-aee9-42af-9018-f87441d364f1" alt="MATRIX HUB" class="scale-up" />
         </a>
         <a class="image-container" href="https://cultofintellect.com/dx9ware/" target="_blank">
-          <img src="https://github.com/user-attachments/assets/b95bc995-23d8-4910-9224-64be3f62cc2d" alt="DX9WARE" class="scale-up" />
+          <img src="https://github.com/user-attachments/assets/3765f001-6f08-40c3-a9f5-1e2688f90095" alt="DX9WARE" class="scale-up" />
         </a>
       </div>
 
