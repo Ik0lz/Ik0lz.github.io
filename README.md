@@ -122,11 +122,11 @@
 <body>
 
   <div class="container">
-    <h1>lol</h1>
+    <h1>Scripts: (For Executors):</h1>
 
     <div>
-      <button class="btn">Download</button>
-      <button class="btn">Get Key</button>
+      <button class="btn">Infinite Yield</button>
+      <button class="btn">Ring Parts V2</button>
     </div>
 
     <h2>Externals</h2>
