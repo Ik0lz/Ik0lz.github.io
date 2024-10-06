@@ -7,7 +7,7 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, ##010101 0%, ##010101 100%);
+      background: linear-gradient(135deg, #000000 0%, #000000 100%);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
