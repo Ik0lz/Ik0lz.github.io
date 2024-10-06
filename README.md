@@ -176,17 +176,17 @@
 
       <h2>Executors</h2>
       <div class="image-gallery">
+        <a class="image-container" href="https:/nocap.land" target="_blank">
+          <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
+        </a>
         <a class="image-container" href="https://getwave.gg" target="_blank">
-          <img src="https://github.com/user-attachments/assets/690499a1-d18b-4197-bb83-9d9d66556168" alt="WAVE" class="scale-up" />
+          <img src="https://github.com/user-attachments/assets/690499a1-d18b-4197-bb83-9d9d66556168" alt="Wave/Ocean" class="scale-up" />
         </a>
         <a class="image-container" href="https://discord.gg/celery" target="_blank">
           <img src="https://github.com/user-attachments/assets/6852d8cf-cf0f-4cf9-9805-6001827696a3" alt="Celery" class="scale-up" />
         </a>
         <a class="image-container" href="https://getsolara.dev" target="_blank">
           <img src="https://github.com/user-attachments/assets/df636c55-4241-4f82-a88b-bf3cec167129" alt="Solara" class="scale-up" />
-        </a>
-        <a class="image-container" href="https://nocap.land" target="_blank">
-          <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
         </a>
       </div>
 
