@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROBLOX EXTERNALS & EXECUTORS   </title>
+  <title>ROBLOX EXTERNALS & EXECUTORS     </title>
 
   <style>
     body {
-      background: linear-gradient(135deg, #262626 0%, #262626 100%);
+      background: linear-gradient(135deg, #1F1F1F, #1F1F1F);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
@@ -83,6 +84,7 @@
 
     .image-container {
       padding: 15px;
+      transition: background-color 0.3s ease; /* Transição suave para o fundo */
     }
 
     /* Estilização dos botões para ficar como os do site */
@@ -104,7 +106,11 @@
       transform: scale(1.05);
     }
 
-    /* Efeito de cor roxa ao passar o mouse sobre as imagens */
+    /* Efeito de cor ao passar o mouse sobre as imagens */
+    .image-container:hover {
+      background-color: #7C7ABF; /* Fundo roxo ao passar o mouse */
+    }
+
     .image-container:hover .scale-up {
       filter: brightness(0.5); /* Escurece a imagem */
     }
@@ -179,4 +185,5 @@
 
 </body>
 </html>
+
 
