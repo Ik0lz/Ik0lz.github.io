@@ -21,23 +21,23 @@
       text-align: center;
     }
 
-    /* Estilo para a seção */
+    /* d */
     .section {
       background-color: #2A2A2A;
-      border: 2px solid rgba(255, 255, 255, 0.3); /* Borda branca transparente */
+      border: 2px solid rgba(255, 255, 255, 0.3); /* walter white border tranaprent */
       border-radius: 10px;
       padding: 20px;
       margin: 20px 0;
     }
 
-    /* Títulos */
+    /* T */
     h1, h2, h3 {
-      color: #7C7ABF; /* Cor roxa para todos os títulos */
+      color: #7C7ABF; /* purple */
       transition: color 0.3s ease;
     }
 
     h1:hover, h2:hover, h3:hover {
-      color: #3731DF; /* Cor azul ao passar o mouse */
+      color: #3731DF; /* blue */
     }
 
     h1 {
@@ -78,14 +78,14 @@
     .scale-up:hover {
       transform: scale(1.1) rotate(5deg);
       box-shadow: 0px 8px 25px rgba(241, 94, 255, 0.6);
-      filter: brightness(0.8); /* Escurece a imagem ao passar o mouse */
+      filter: brightness(0.8); /* Black mirror */
     }
 
     .image-container {
       padding: 15px;
     }
 
-    /* Estilização dos botões para ficar como os do site */
+    /* me */
     .btn {
       background-color: white;
       color: #333;
@@ -104,13 +104,13 @@
       transform: scale(1.05);
     }
 
-    /* Efeito de cor ao passar o mouse sobre as imagens */
+  
     .image-container:hover {
-      /* Sem fundo alterado ao passar o mouse */
+      
     }
 
     .image-container:hover .scale-up {
-      filter: brightness(0.5); /* Escurece a imagem */
+      filter: brightness(0.5); 
     }
 
     /* Responsivo */
@@ -146,10 +146,10 @@
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text)
         .then(() => {
-          alert('Script copiado para a área de transferência!');
+          alert('Script copied at your clipboard!');
         })
         .catch(err => {
-          alert('Erro ao copiar: ', err);
+          alert('Error while copying: ', err);
         });
     }
   </script>
