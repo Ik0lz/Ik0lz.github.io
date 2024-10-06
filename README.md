@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROBLOX EXTERNALS & EXECUTORS  </title>
+  <title>ROBLOX EXTERNALS & EXECUTORS</title>
 
   <style>
     body {
@@ -77,13 +78,12 @@
 
     .scale-up:hover {
       transform: scale(1.1) rotate(5deg);
-      box-shadow: 0px 8px 25px rgba(255, 126, 95, 0.6);
+      box-shadow: 0px 8px 25px rgba(241, 94, 255, 0.6);
       filter: brightness(0.8); /* Escurece a imagem ao passar o mouse */
     }
 
     .image-container {
       padding: 15px;
-      transition: background-color 0.3s ease; /* Transição suave para o fundo */
     }
 
     /* Estilização dos botões para ficar como os do site */
@@ -107,7 +107,7 @@
 
     /* Efeito de cor ao passar o mouse sobre as imagens */
     .image-container:hover {
-      background-color: #7C7ABF; /* Fundo roxo ao passar o mouse */
+      
     }
 
     .image-container:hover .scale-up {
