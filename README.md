@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,21 +22,42 @@
       text-align: center;
     }
 
+    /* Estilo para a seção */
+    .section {
+      background-color: #1F1F1F;
+      border: 2px solid rgba(255, 255, 255, 0.3); /* Borda branca transparente */
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    /* Títulos */
     h1, h2, h3 {
-      color: #7C7ABF; /* Cor roxa para os títulos */
-      transition: color 0.3s ease; /* Transição suave para a cor do texto */
+      color: #7C7ABF; /* Cor roxa para todos os títulos */
+      transition: color 0.3s ease;
     }
 
     h1:hover, h2:hover, h3:hover {
       color: #3731DF; /* Cor azul ao passar o mouse */
     }
 
-    .section {
-      background-color: #525157; /* Fundo da seção */
-      border: 2px solid #FFFFFF; /* Borda branca */
-      border-radius: 10px; /* Cantos arredondados */
-      padding: 20px;
-      margin: 20px 0; /* Espaço entre as seções */
+    h1 {
+      font-size: 3.5rem;
+      margin: 20px 0;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin: 10px 0;
     }
 
     .image-gallery {
@@ -63,6 +85,7 @@
       padding: 15px;
     }
 
+    /* Estilização dos botões para ficar como os do site */
     .btn {
       background-color: white;
       color: #333;
@@ -81,6 +104,7 @@
       transform: scale(1.05);
     }
 
+    /* Responsivo */
     @media (max-width: 768px) {
       h1 {
         font-size: 2.5rem;
@@ -119,9 +143,7 @@
         <button class="btn">Infinite Yield</button>
         <button class="btn">Ring Parts V2</button>
       </div>
-    </div>
 
-    <div class="section">
       <h2>Externals</h2>
       <div class="image-gallery">
         <div class="image-container">
@@ -131,9 +153,7 @@
           <img src="https://github.com/user-attachments/assets/b95bc995-23d8-4910-9224-64be3f62cc2d" alt="DX9WARE" class="scale-up" />
         </div>
       </div>
-    </div>
 
-    <div class="section">
       <h2>Executors</h2>
       <div class="image-gallery">
         <div class="image-container">
@@ -154,5 +174,3 @@
 
 </body>
 </html>
-
-
