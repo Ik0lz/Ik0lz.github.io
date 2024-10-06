@@ -6,17 +6,15 @@
   <title>ROBLOX EXTERNALS & EXECUTORS</title>
 
   <style>
-    /* Background gradient and base styles */
     body {
       background: linear-gradient(135deg, #2A2727 0%, #3A3A3A 100%);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
       color: white;
-      overflow-x: hidden; /* Prevent horizontal scroll */
+      overflow-x: hidden;
     }
 
-    /* General container style */
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -24,17 +22,15 @@
       text-align: center;
     }
 
-    /* Title styling with gradient text effect */
+    /* Estilo inspirado no "Let the WAVE begin" */
     h1 {
       font-size: 3.5rem;
       margin: 20px 0;
-      background: linear-gradient(90deg, #ff7e5f, #feb47b);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      text-transform: uppercase;
+      color: white;
       font-weight: bold;
+      font-style: italic;
       letter-spacing: 2px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     }
 
     h2 {
@@ -43,14 +39,12 @@
       color: #ff7e5f;
     }
 
-    /* Subtitle styling */
     h3 {
       font-size: 1.8rem;
       margin: 10px 0;
       color: #feb47b;
     }
 
-    /* Flexbox for aligning images */
     .image-gallery {
       display: flex;
       justify-content: center;
@@ -59,7 +53,6 @@
       gap: 20px;
     }
 
-    /* Image hover effect */
     .scale-up {
       width: 250px;
       height: auto;
@@ -73,29 +66,30 @@
       box-shadow: 0px 8px 25px rgba(255, 126, 95, 0.6);
     }
 
-    /* Add some padding around images */
     .image-container {
       padding: 15px;
     }
 
-    /* Button hover animation for future buttons if needed */
+    /* Estilização dos botões para ficar como os do site */
     .btn {
-      background-color: #ff7e5f;
-      color: white;
+      background-color: white;
+      color: #333;
       padding: 12px 20px;
       font-size: 1.2rem;
       border: none;
       border-radius: 25px;
       cursor: pointer;
+      margin: 0 10px;
+      font-weight: bold;
       transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #feb47b;
+      background-color: #f1f1f1;
       transform: scale(1.05);
     }
 
-    /* Responsive styling */
+    /* Responsivo */
     @media (max-width: 768px) {
       h1 {
         font-size: 2.5rem;
@@ -128,7 +122,12 @@
 <body>
 
   <div class="container">
-    <h1>ROBLOX EXTERNALS & EXECUTORS</h1>
+    <h1>Let the WAVE begin</h1>
+
+    <div>
+      <button class="btn">Download</button>
+      <button class="btn">Get Key</button>
+    </div>
 
     <h2>Externals</h2>
     <div class="image-gallery">
@@ -147,12 +146,6 @@
       </div>
       <div class="image-container">
         <img src="https://github.com/user-attachments/assets/6852d8cf-cf0f-4cf9-9805-6001827696a3" alt="Celery" class="scale-up" />
-      </div>
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/df636c55-4241-4f82-a88b-bf3cec167129" alt="Solara" class="scale-up" />
-      </div>
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
       </div>
     </div>
   </div>
