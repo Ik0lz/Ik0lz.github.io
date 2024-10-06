@@ -146,7 +146,7 @@
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text)
         .then(() => {
-          alert('Script copied at your clipboard!');
+          alert('Script copied in your clipboard!');
         })
         .catch(err => {
           alert('Error while copying: ', err);
