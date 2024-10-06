@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -77,7 +78,7 @@
 
     .scale-up:hover {
       transform: scale(1.1) rotate(5deg);
-      box-shadow: 0px 8px 25px rgba(255, 126, 95, 0.6);
+      box-shadow: 0px 8px 25px rgba(241, 94, 255, 0.6);
       filter: brightness(0.8); /* Escurece a imagem ao passar o mouse */
     }
 
@@ -161,7 +162,7 @@
       <h1>Scripts: (For Executors):</h1>
       <div>
         <button class="btn" onclick="copyToClipboard(`loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()`);">Infinite Yield</button>
-        <button class="btn" onclick="copyToClipboard(`loadstring(game:HttpGet("https://pastefy.app/t0djamGi/raw"))()`);">Ring Parts V2</button>
+        <button class="btn" onclick="copyToClipboard(`loadstring(game:HttpGet('https://pastefy.app/t0djamGi/raw'))()`);">Ring Parts V2</button>
       </div>
 
       <h2>Externals</h2>
@@ -194,6 +195,3 @@
 
 </body>
 </html>
-
-
-
