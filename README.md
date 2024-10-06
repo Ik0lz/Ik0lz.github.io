@@ -22,26 +22,21 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 3.5rem;
-      margin: 20px 0;
-      color: white;
-      font-weight: bold;
-      font-style: italic;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    h1, h2, h3 {
+      color: #7C7ABF; /* Cor roxa para os títulos */
+      transition: color 0.3s ease; /* Transição suave para a cor do texto */
     }
 
-    h2 {
-      font-size: 2.5rem;
-      margin: 20px 0;
-      color: #ff7e5f;
+    h1:hover, h2:hover, h3:hover {
+      color: #3731DF; /* Cor azul ao passar o mouse */
     }
 
-    h3 {
-      font-size: 1.8rem;
-      margin: 10px 0;
-      color: #feb47b;
+    .section {
+      background-color: #525157; /* Fundo da seção */
+      border: 2px solid #FFFFFF; /* Borda branca */
+      border-radius: 10px; /* Cantos arredondados */
+      padding: 20px;
+      margin: 20px 0; /* Espaço entre as seções */
     }
 
     .image-gallery {
@@ -119,36 +114,41 @@
 <body>
 
   <div class="container">
-    <h1>Scripts: (For Executors):</h1>
-
-    <div>
-      <button class="btn">Infinite Yield</button>
-      <button class="btn">Ring Parts V2</button>
-    </div>
-
-    <h2>Externals</h2>
-    <div class="image-gallery">
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/e7b72dd9-aee9-42af-9018-f87441d364f1" alt="MATRIX HUB" class="scale-up" />
-      </div>
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/b95bc995-23d8-4910-9224-64be3f62cc2d" alt="DX9WARE" class="scale-up" />
+    <div class="section">
+      <h1>Scripts: (For Executors):</h1>
+      <div>
+        <button class="btn">Infinite Yield</button>
+        <button class="btn">Ring Parts V2</button>
       </div>
     </div>
 
-    <h2>Executors</h2>
-    <div class="image-gallery">
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/690499a1-d18b-4197-bb83-9d9d66556168" alt="WAVE" class="scale-up" />
+    <div class="section">
+      <h2>Externals</h2>
+      <div class="image-gallery">
+        <div class="image-container">
+          <img src="https://github.com/user-attachments/assets/e7b72dd9-aee9-42af-9018-f87441d364f1" alt="MATRIX HUB" class="scale-up" />
+        </div>
+        <div class="image-container">
+          <img src="https://github.com/user-attachments/assets/b95bc995-23d8-4910-9224-64be3f62cc2d" alt="DX9WARE" class="scale-up" />
+        </div>
       </div>
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/6852d8cf-cf0f-4cf9-9805-6001827696a3" alt="Celery" class="scale-up" />
-      </div>
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/df636c55-4241-4f82-a88b-bf3cec167129" alt="Solara" class="scale-up" />
-      </div>
-      <div class="image-container">
-        <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
+    </div>
+
+    <div class="section">
+      <h2>Executors</h2>
+      <div class="image-gallery">
+        <div class="image-container">
+          <img src="https://github.com/user-attachments/assets/690499a1-d18b-4197-bb83-9d9d66556168" alt="WAVE" class="scale-up" />
+        </div>
+        <div class="image-container">
+          <img src="https://github.com/user-attachments/assets/6852d8cf-cf0f-4cf9-9805-6001827696a3" alt="Celery" class="scale-up" />
+        </div>
+        <div class="image-container">
+          <img src="https://github.com/user-attachments/assets/df636c55-4241-4f82-a88b-bf3cec167129" alt="Solara" class="scale-up" />
+        </div>
+        <div class="image-container">
+          <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
+        </div>
       </div>
     </div>
   </div>
