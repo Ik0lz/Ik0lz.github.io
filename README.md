@@ -7,7 +7,7 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #000000 0%, #000000 100%);
+      background: linear-gradient(135deg, #010101 0%, #010101 100%);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
@@ -22,7 +22,6 @@
       text-align: center;
     }
 
-    /* Estilo inspirado no "Let the WAVE begin" */
     h1 {
       font-size: 3.5rem;
       margin: 20px 0;
@@ -70,7 +69,6 @@
       padding: 15px;
     }
 
-    /* Estilização dos botões para ficar como os do site */
     .btn {
       background-color: white;
       color: #333;
@@ -89,7 +87,6 @@
       transform: scale(1.05);
     }
 
-    /* Responsivo */
     @media (max-width: 768px) {
       h1 {
         font-size: 2.5rem;
