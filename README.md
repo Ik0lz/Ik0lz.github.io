@@ -7,7 +7,7 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #2A2727 0%, #3A3A3A 100%);
+      background: linear-gradient(135deg, ##010101 0%, ##010101 100%);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
@@ -122,7 +122,7 @@
 <body>
 
   <div class="container">
-    <h1>Let the WAVE begin</h1>
+    <h1>lol</h1>
 
     <div>
       <button class="btn">Download</button>
