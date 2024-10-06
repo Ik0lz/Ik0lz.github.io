@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROBLOX EXTERNALS & EXECUT ORS</title>
+  <title>ROBLOX EXTERNALS & EXECUTORS</title>
 
   <style>
     body {
@@ -78,7 +78,7 @@
 
     .scale-up:hover {
       transform: scale(1.1) rotate(5deg);
-      box-shadow: 0px 8px 25px rgba(241, 94, 255, 0.6);
+      box-shadow: 0px 8px 25px rgba(255, 126, 95, 0.6);
       filter: brightness(0.8); /* Escurece a imagem ao passar o mouse */
     }
 
@@ -107,7 +107,7 @@
 
     /* Efeito de cor ao passar o mouse sobre as imagens */
     .image-container:hover {
-      
+      /* Sem fundo alterado ao passar o mouse */
     }
 
     .image-container:hover .scale-up {
@@ -143,6 +143,17 @@
       }
     }
   </style>
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text)
+        .then(() => {
+          alert('Script copiado para a área de transferência!');
+        })
+        .catch(err => {
+          alert('Erro ao copiar: ', err);
+        });
+    }
+  </script>
 </head>
 <body>
 
@@ -150,34 +161,34 @@
     <div class="section">
       <h1>Scripts: (For Executors):</h1>
       <div>
-        <button class="btn">Infinite Yield</button>
-        <button class="btn">Ring Parts V2</button>
+        <button class="btn" onclick="copyToClipboard(`loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()`);">Infinite Yield</button>
+        <button class="btn" onclick="copyToClipboard(`loadstring(game:HttpGet("https://pastefy.app/t0djamGi/raw"))()`);">Ring Parts V2</button>
       </div>
 
       <h2>Externals</h2>
       <div class="image-gallery">
-        <div class="image-container">
+        <a class="image-container" href="https://matrixhubs.shop/" target="_blank">
           <img src="https://github.com/user-attachments/assets/e7b72dd9-aee9-42af-9018-f87441d364f1" alt="MATRIX HUB" class="scale-up" />
-        </div>
-        <div class="image-container">
+        </a>
+        <a class="image-container" href="https://cultofintellect.com/dx9ware/" target="_blank">
           <img src="https://github.com/user-attachments/assets/b95bc995-23d8-4910-9224-64be3f62cc2d" alt="DX9WARE" class="scale-up" />
-        </div>
+        </a>
       </div>
 
       <h2>Executors</h2>
       <div class="image-gallery">
-        <div class="image-container">
+        <a class="image-container" href="https://getwave.gg" target="_blank">
           <img src="https://github.com/user-attachments/assets/690499a1-d18b-4197-bb83-9d9d66556168" alt="WAVE" class="scale-up" />
-        </div>
-        <div class="image-container">
+        </a>
+        <a class="image-container" href="https://discord.gg/celery" target="_blank">
           <img src="https://github.com/user-attachments/assets/6852d8cf-cf0f-4cf9-9805-6001827696a3" alt="Celery" class="scale-up" />
-        </div>
-        <div class="image-container">
+        </a>
+        <a class="image-container" href="https://getsolara.dev" target="_blank">
           <img src="https://github.com/user-attachments/assets/df636c55-4241-4f82-a88b-bf3cec167129" alt="Solara" class="scale-up" />
-        </div>
-        <div class="image-container">
+        </a>
+        <a class="image-container" href="https://nocap.land" target="_blank">
           <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
-        </div>
+        </a>
       </div>
     </div>
   </div>
