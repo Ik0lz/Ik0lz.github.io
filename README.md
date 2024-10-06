@@ -189,6 +189,16 @@
           <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
         </a>
       </div>
+
+      <h2>Executors (Mobile)</h2>
+      <div class="image-gallery">
+        <a class="image-container" href="https://spdmteam.com/index?os=android" target="_blank">
+          <img src="https://github.com/user-attachments/assets/9a671b81-743d-4544-bc18-4bbdd96acb46" alt="Arceus X" class="scale-up" />
+        </a>
+        <a class="image-container" href="https://codex.lol/android" target="_blank">
+          <img src="https://github.com/user-attachments/assets/f5cce0bb-a09b-44b2-8072-f372a6400d44" alt="Code X" class="scale-up" />
+        </a>
+      </div>
     </div>
   </div>
 
