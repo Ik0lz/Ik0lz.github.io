@@ -6,11 +6,11 @@
 
   <style>
     body {
-      background: linear-gradient(135deg, #0C0C0C, #0C0C0C);
+      background: linear-gradient(135deg, #141414, #0C0C0C);
       margin: 0;
       padding: 0;
       font-family: 'Roboto', sans-serif;
-      color: white;
+      color:rgba(243, 243, 243, 0.3);
       overflow-x: hidden;
     }
 
@@ -23,8 +23,8 @@
 
     /* d */
     .section {
-      background-color: #2A2A2A;
-      border: 2px solid rgba(255, 255, 255, 0.3); /* walter white border tranaprent */
+      background-color: #161616;
+      border: 2px solid rgba(158, 158, 158, 0.3); /* walter white border tranaprent */
       border-radius: 10px;
       padding: 20px;
       margin: 20px 0;
@@ -32,12 +32,12 @@
 
     /* T */
     h1, h2, h3 {
-      color: #7C7ABF; /* purple */
+      color: #c5c5d1; /* white */
       transition: color 0.3s ease;
     }
 
     h1:hover, h2:hover, h3:hover {
-      color: #3731DF; /* blue */
+      color: #eeeef1; /* very white */
     }
 
     h1 {
@@ -76,13 +76,13 @@
     }
 
     .scale-up:hover {
-      transform: scale(1.1) rotate(5deg);
-      box-shadow: 0px 8px 25px rgba(241, 94, 255, 0.6);
+      transform: scale(1.1) rotate3d(10, 25, 0, 21deg);
+      box-shadow: 0px 8px 25px rgba(250, 250, 250, 0.6);
       filter: brightness(0.8); /* Black mirror */
     }
 
     .image-container {
-      padding: 15px;
+      padding: 5px;
     }
 
     /* me */
@@ -106,11 +106,11 @@
 
   
     .image-container:hover {
-      
+      border-style: hidden;
     }
 
     .image-container:hover .scale-up {
-      filter: brightness(0.5); 
+      filter: brightness(0.35); 
     }
 
     /* Responsivo */
@@ -210,7 +210,6 @@
 
 </body>
 </html>
-
 
 
 
