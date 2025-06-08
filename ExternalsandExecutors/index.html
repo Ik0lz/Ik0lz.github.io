@@ -1,217 +1,430 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Executors & Externals</title>
-
-  <style>
-    body {
-      background: linear-gradient(135deg, #141414, #0C0C0C);
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      color:rgba(243, 243, 243, 0.3);
-      overflow-x: hidden;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* d */
-    .section {
-      background-color: #161616;
-      border: 2px solid rgba(158, 158, 158, 0.3); /* walter white border tranaprent */
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    /* T */
-    h1, h2, h3 {
-      color: #c5c5d1; /* white */
-      transition: color 0.3s ease;
-    }
-
-    h1:hover, h2:hover, h3:hover {
-      color: #eeeef1; /* very white */
-    }
-
-    h1 {
-      font-size: 3.5rem;
-      margin: 20px 0;
-      font-weight: bold;
-      font-style: italic;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      margin: 20px 0;
-    }
-
-    h3 {
-      font-size: 1.8rem;
-      margin: 10px 0;
-    }
-
-    .image-gallery {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    .scale-up {
-      width: 250px;
-      height: auto;
-      transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
-      border-radius: 10px;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
-    }
-
-    .scale-up:hover {
-      transform: scale(1.1) rotate3d(10, 25, 0, 21deg);
-      box-shadow: 0px 8px 25px rgba(250, 250, 250, 0.6);
-      filter: brightness(0.8); /* Black mirror */
-    }
-
-    .image-container {
-      padding: 5px;
-    }
-
-    /* me */
-    .btn {
-      background-color: white;
-      color: #333;
-      padding: 12px 20px;
-      font-size: 1.2rem;
-      border: none;
-      border-radius: 25px;
-      cursor: pointer;
-      margin: 0 10px;
-      font-weight: bold;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #f1f1f1;
-      transform: scale(1.05);
-    }
-
-  
-    .image-container:hover {
-      border-style: hidden;
-    }
-
-    .image-container:hover .scale-up {
-      filter: brightness(0.35); 
-    }
-
-    /* Responsivo */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.5rem;
-      }
-
-      h2 {
-        font-size: 2rem;
-      }
-
-      .scale-up {
-        width: 200px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      .scale-up {
-        width: 150px;
-      }
-    }
-  </style>
-  <script>
-    function copyToClipboard(text) {
-      navigator.clipboard.writeText(text)
-        .then(() => {
-          alert('Script copied in your clipboard!');
-        })
-        .catch(err => {
-          alert('Error while copying: ', err);
-        });
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favico/favicon.ico">
+    <meta name="theme-color" content="#2C53C0"/>
+    <meta property="og:title" content="Discord Message Previewer">
+    <title>Discord Message Previewer</title>
+    <meta name="og:description" content="Discord message generator, made so you can preview role icons and see how they look! This is an upgraded from: https://www.moldygd.com/tools/discord-message-previewer/">
 </head>
 <body>
 
-  <div class="container">
-    <div class="section">
-      <h1>Scripts: (For Executors):</h1>
-      <div>
-        <button class="btn" onclick="copyToClipboard(`loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()`);">Infinite Yield</button>
-        <button class="btn" onclick="copyToClipboard(`loadstring(game:HttpGet('https://pastefy.app/t0djamGi/raw'))()`);">Ring Parts V3</button>
-      </div>
+    <style>
 
-      <h2>Externals</h2>
-      <div class="image-gallery">
-        <a class="image-container" href="https://matrixhubs.shop/" target="_blank">
-          <img src="https://github.com/user-attachments/assets/e7b72dd9-aee9-42af-9018-f87441d364f1" alt="MATRIX HUB" class="scale-up" />
-        </a>
-        <a class="image-container" href="https://cultofintellect.com/dx9ware/" target="_blank">
-          <img src="https://github.com/user-attachments/assets/3765f001-6f08-40c3-a9f5-1e2688f90095" alt="DX9WARE" class="scale-up" />
-        </a>
-      </div>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            background-color: #36393f;
+            color: #D7D6DE;
+            font-size: 16px;
+        }
 
-      <h2>Executors</h2>
-      <div class="image-gallery">
-        <a class="image-container" href="https://nocap.land" target="_blank">
-          <img src="https://github.com/user-attachments/assets/fadf41fe-3c30-4628-a03c-7ada98801e72" alt="Electron" class="scale-up" />
-        </a>
-        <a class="image-container" href="https://getwave.gg/#this_executor_devs_keep_saying_that_wave_aint_detected_which_is_a_lie_lol" target="_blank">
-          <img src="https://github.com/user-attachments/assets/690499a1-d18b-4197-bb83-9d9d66556168" alt="Wave/Ocean" class="scale-up" />
-        </a>
-        <a class="image-container" href="https://discord.gg/celery" target="_blank">
-          <img src="https://github.com/user-attachments/assets/6852d8cf-cf0f-4cf9-9805-6001827696a3" alt="Celery" class="scale-up" />
-        </a>
-        <a class="image-container" href="https://getsolara.dev" target="_blank">
-          <img src="https://github.com/user-attachments/assets/df636c55-4241-4f82-a88b-bf3cec167129" alt="Solara" class="scale-up" />
-        </a>
-         <a class="image-container" href="https://discord.gg/awpgg" target="_blank">
-          <img src="https://github.com/user-attachments/assets/9eaddc75-437c-495a-9b53-2425b4eb9b16" alt="AWP.GG" class="scale-up" />
-        </a>
-      </div>
+        .container {
+            max-width: 1000px;
+            margin: 100px auto;
+            padding: 0 25px;
+        }
 
-      <h2>Executors (Mobile)</h2>
-      <div class="image-gallery">
-        <a class="image-container" href="https://spdmteam.com/index?os=android" target="_blank">
-          <img src="https://github.com/user-attachments/assets/9a671b81-743d-4544-bc18-4bbdd96acb46" alt="Arceus X" class="scale-up" />
-        </a>
-        <a class="image-container" href="https://codex.lol/android" target="_blank">
-          <img src="https://github.com/user-attachments/assets/f5cce0bb-a09b-44b2-8072-f372a6400d44" alt="Code X" class="scale-up" />
-        </a>
-      <a class= "image-container" href="https://krnl.cat" target="_blank">
-          <img src="https://github.com/user-attachments/assets/f149347a-8d85-46c2-82fa-6c55a8528bb3" alt="KRNL" class="scale-up" />
-      </a>
-      </div>
+        .message {
+            display: flex;
+            margin-bottom: 25px;
+        }
+        .message .avatar {
+            margin-right: 15px;
+        }
+
+        .message .avatar img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .message .content .name {
+            font-weight: 400;
+            color: #FFFFFF;
+            display: block;
+            margin-bottom: 5px;
+            margin-top: -5px;
+        }
+
+        .message .content .name .badge img {
+            width: 20px;
+            height: 20px;
+            margin-bottom: -4px;
+            margin-right: -2px;
+        }
+        .message .content .name .badge {
+            display: var(--icon);
+        }
+
+        .message .content .name2:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .message .content .name .time {
+            font-size: 0.75rem;
+            color: #70767D;
+            padding-left: 5px;
+        }
+
+        .message .content .name.main {
+            color: var(--col1);
+        }
+
+        .message .content .name.secondary {
+            color: var(--col2);
+        }
+
+        .settings {
+            margin-bottom: 100px;
+        }
+
+        label {
+            color: #FFFFFF;
+        }
+
+        .explanation {
+            margin-top: 100px;
+            font-size: 1.2rem;
+        }
+
+        .color-box {
+            width: 50px;
+            height: 50px;
+            margin: 1px;
+            text-align: right;
+            border: 2px solid #ccc;
+            background-color: #FC0AC9;
+        }
+
+        .color-box2 {
+            width: 50px;
+            height: 50px;
+            margin: 1px;
+            text-align: right;
+            border: 2px solid #ccc;
+            background-color: #A7A6FF;
+        }
+
+        .red {
+            margin: 1px;
+        }
+
+        .redrange {
+            margin: -1px;
+        }
+
+        .green {
+            margin: 1px;
+        }
+
+        .TitleTextHeader {
+            margin: 40px;
+        }
+
+        .greenrange {
+            margin: -1px;
+        }
+
+        .blue {
+            margin: 1px;
+        }
+
+        .bluerange {
+            margin: -1px;
+        }
+
+        .settings input, .settings textarea {
+            box-sizing: border-box;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.11);
+            outline: none;
+            border: 0px;
+            padding: 10px;
+            color: #D7D6DE;
+            font-size: 1.1rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            margin-top: 5px;
+        }
+
+        .settings input[type="checkbox"] {
+            width: auto !important;
+        }
+
+        :root {
+            --col1: #fc0ac9;
+            --col2: #a7a6ff;
+            --icon: unset;
+        }
+
+        .MainTitle {
+            color: #FFFFFF;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #32343a;
+            border-radius: 10px;
+            padding: 10px 30px;
+        }
+
+        .button {
+            display: inline-block;
+            color: #FFFFFF;
+            font-weight: bold;
+            background-color: #5865F2;
+            border-radius: 5px;
+            padding: 10px 30px;
+            cursor: pointer;
+            transition: background-color 0.25s ease;
+            margin: 4px;
+        }
+
+        .button:hover {
+            background-color: #4752C4;
+        }
+
+    </style>
+
+    <div class="container">
+    <h2 class="MainTitle">Discord Message Preview: Tool</h2>
+    <p class="TitleTextHeader">Discord message generator, made so you can preview role icons and see how they look! 
+        This is an upgraded version from: https://www.moldygd.com/tools/discord-message-previewer/</p>
+        <div class="message">
+            <div class="avatar">
+                <img src="https://www.bing.com/th/id/OIP.3jvSMlkzEbgNP_wUA54yzgHaHa?w=198&h=199&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" id="avatar2">
+            </div>
+
+            <div class="content">
+                <span class="secondary name"><span class="name2" id="name2" color="">Tool</span> <span class="badge"><img id="icon2" src="https://th.bing.com/th/id/OIP.FTPe0bASwy6Wy_2AzSI_bwAAAA?w=180&h=180&c=7&r=0&o=7&pid=1.7&rm=3"></span> <span class="time">15:30</span></span>
+                <span class="text" id="msg2">Hi, Im new here.</span>
+            </div>
+
+        </div>
+        
+        <div class="message">
+            <div class="avatar">
+                <img src="https://www.bing.com/th/id/OIP.pxxYTSDaEDZQC2qHKeElWwHaHa?w=171&h=180&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" id="avatar">
+            </div>
+            <div class="content">
+                <span class="main name"><span class="name2" id="name" color="">Username</span> <span class="badge"><img id="icon" src="https://images-ext-1.discordapp.net/external/t4PkLfhtTwTVZuwr-1gwKTAAahmyLxj0XjT-zD7gr8I/https/cdn.discordapp.com/emojis/896405226289004564.png"></span> <span class="time">15:30</span></span>
+                <span class="text" id="msg">Hello! Welcome to our server.</span>
+            </div>
+
+        </div>
+
+        <div class="message">
+            <div class="avatar">
+                <img src="https://www.bing.com/th/id/OIP.3jvSMlkzEbgNP_wUA54yzgHaHa?w=198&h=199&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" id="avatar3">
+            </div>
+            <div class="content">
+                <span class="secondary name"><span class="name2" id="name3" color="">Tool</span> <span class="badge"><img id="icon3" src="https://th.bing.com/th/id/OIP.FTPe0bASwy6Wy_2AzSI_bwAAAA?w=180&h=180&c=7&r=0&o=7&pid=1.7&rm=3"></span> <span class="time">15:30</span></span>
+                <span class="text" id="msg3">Ty.</span>
+            </div>
+        </div>
+        <span onclick="generateMsg()" class="button">Generate</span>
+        <div class="explanation">
+            <p><b>Pro Tips:</b></p>
+            <ul>
+                <li>If the name or timestamp line wraps, view this page in landscape mode.</li>
+            </ul>
+        </div>
+
+    <div class="settings">
+
+            <label>Name</label><br>
+            <input placeholder="Username" id="new-name"><br>
+            <br>
+
+            <label>Name (ANOTHER USER)</label><br>
+            <input placeholder="Tool" id="new-name2"><br>
+            <br>
+
+            <label>Message</label><br>
+            <textarea placeholder="Hello! Welcome to our server." id="new-msg"></textarea><br>
+            <br>
+
+            <label>Message ("user: Tool")</label><br>
+            <textarea placeholder="Hi, Im new here." id="new-msg2"></textarea><br>
+            <br>
+
+            <label>Message2 ("user: Tool")</label><br>
+            <textarea placeholder="Ty." id="new-msg3"></textarea><br>
+            <br>
+
+            <label>Avatar</label><br>
+            <!--<input placeholder="File" id="new-avatar"><br> -->
+            <input type="file" id="new-avatar" accept="image"><br>
+            <br>
+
+            <label>Avatar ("user: Tool")</label><br>
+            <!--<input placeholder="File" id="new-avatar"><br> -->
+            <input type="file" id="new-avatar2" accept="image"><br>
+            <br>
+
+            <label>Role Icon</label><br>
+            <input type="file" id="new-icon" accept="image"><br>
+            <br>
+
+            <label>Role Icon ("user: Tool")</label><br>
+            <input type="file" id="new-icon2" accept="image"><br>
+            <br>
+
+            <label>Color (HEX VALUE)</label><br>
+            <div class="color-box" id="colorBox"></div>
+            <span class="hexValue" id="hexValue">FC0AC9</span><br>
+            <label class="red" for="red">Red: </label>
+            <input class="redrange" type="range" id="red" min="0" max="255" value="252"><br><br>
+
+            <label class="green" for="green">Green: </label>
+            <input class="greenrange" type="range" id="green" min="0" max="255" value="10"><br><br>
+
+            <label class="blue" for="blue">Blue: </label>
+            <input class="bluerange" type="range" id="blue"  min="0" max="255" value="201"><br><br>
+            <br>
+<!--167, 166, 255 COLOR-->
+            <label>Color 2 (HEX VALUE)</label><br>
+            <div class="color-box2" id="colorBox2"></div>
+            <span class="hexValue" id="hexValue2">A7A6FF</span><br>
+            <label class="red" for="red">Red: </label>
+            <input class="redrange" type="range" id="red1" min="0" max="255" value="167"><br><br>
+
+            <label class="green" for="green">Green: </label>
+            <input class="greenrange" type="range" id="green1" min="0" max="255" value="166"><br><br>
+
+            <label class="blue" for="blue">Blue: </label>
+            <input class="bluerange" type="range" id="blue1"  min="0" max="255" value="255"><br><br>
+            <br>
+            <input type="checkbox" id="icon-bool"> <label>Disable Role Icon</label><br>
+            <br>
+        </div>
     </div>
-  </div>
 
+    <script>
+        function generateMsg() {
+            if (document.getElementById("new-name").value !== '') {
+                document.getElementById("name").innerText = document.getElementById("new-name").value;
+            }
+
+            if (document.getElementById("new-msg").value !== '') {
+                document.getElementById("msg").innerText = document.getElementById("new-msg").value;
+            }
+
+            const inputNewIconP = document.getElementById("new-avatar");
+            const fileimageIconP = inputNewIconP.files[0];
+
+             if (fileimageIconP) {
+                document.getElementById("avatar").src = URL.createObjectURL(fileimageIconP);
+            }
+
+            const inputNewIconR = document.getElementById("new-icon");
+            const fileimageIconR = inputNewIconR.files[0];
+
+             if (fileimageIconR) {
+                document.getElementById("icon").src = URL.createObjectURL(fileimageIconR);
+            }
+
+            if (document.getElementById("hexValue").value !== '') {
+                document.documentElement.style
+                .setProperty('--col1','#' + document.getElementById("hexValue").innerText);
+            }
+
+            if (document.getElementById("icon-bool").checked == false) {
+                document.documentElement.style
+                .setProperty('--icon', 'unset');
+            } else {
+                document.documentElement.style
+                .setProperty('--icon', 'none');
+            }
+    <!--BRAD TEXT-->
+            if (document.getElementById("new-name2").value !== '') {
+                document.getElementById("name2").innerText = document.getElementById("new-name2").value;
+                 document.getElementById("name3").innerText = document.getElementById("new-name2").value;
+            }
+
+            if (document.getElementById("new-msg2").value !== '') {
+                document.getElementById("msg2").innerText = document.getElementById("new-msg2").value;
+            }
+
+            if (document.getElementById("new-msg3").value !== '') {
+                document.getElementById("msg3").innerText = document.getElementById("new-msg3").value;
+            }
+
+            if (document.getElementById("hexValue2").value !== '') {
+                document.documentElement.style
+                .setProperty('--col2','#' + document.getElementById("hexValue2").innerText);
+            }
+
+            const inputNewIconP2 = document.getElementById("new-avatar2");
+            const fileimageIconP2 = inputNewIconP2.files[0];
+
+            if (fileimageIconP2) {
+                document.getElementById("avatar2").src = URL.createObjectURL(fileimageIconP2);
+                document.getElementById("avatar3").src = URL.createObjectURL(fileimageIconP2);
+            }
+
+            const inputNewIconR2 = document.getElementById("new-icon2");
+            const fileimageIconR2 = inputNewIconR2.files[0];
+
+            if (fileimageIconR) {
+                document.getElementById("icon2").src = URL.createObjectURL(fileimageIconR2);
+                document.getElementById("icon3").src = URL.createObjectURL(fileimageIconR2);
+            }
+        }
+
+        const redInput = document.getElementById('red');
+        const greenInput = document.getElementById('green');
+        const blueInput = document.getElementById('blue');
+        const colorBox = document.getElementById('colorBox');
+
+         const redInput1 = document.getElementById('red1');
+        const greenInput1 = document.getElementById('green1');
+        const blueInput1 = document.getElementById('blue1');
+        const colorBox1 = document.getElementById('colorBox2');
+        
+        function componentToHex(c) {
+            const hex = c.toString(16);
+            return hex.length == 1 ? "0" + hex : hex;
+        }
+
+        function rgbToHex(r, g, b) {
+            return componentToHex(r) + componentToHex(g) + componentToHex(b);
+        }
+
+        function updateColor() {
+            const red = redInput.value;
+            const green = greenInput.value;
+            const blue = blueInput.value;
+            const rgb = `rgb(${red}, ${green}, ${blue})`;
+            colorBox.style.backgroundColor = rgb;
+
+            const r = parseInt(document.getElementById("red").value) || 0;
+            const g = parseInt(document.getElementById("green").value) || 0;
+            const b = parseInt(document.getElementById("blue").value) || 0;
+            const hex = rgbToHex(r, g, b);
+            document.getElementById("hexValue").innerText = hex.toUpperCase();
+
+            const red1 = redInput1.value;
+            const green1 = greenInput1.value;
+            const blue1 = blueInput1.value;
+            const rgb1 = `rgb(${red1}, ${green1}, ${blue1})`;
+            colorBox1.style.backgroundColor = rgb1;
+
+            const r1 = parseInt(document.getElementById("red1").value) || 0;
+            const g1 = parseInt(document.getElementById("green1").value) || 0;
+            const b1 = parseInt(document.getElementById("blue1").value) || 0;
+            const hex1 = rgbToHex(r1, g1, b1);
+            document.getElementById("hexValue2").innerText = hex1.toUpperCase();
+        }
+
+        redInput.addEventListener('input', updateColor);
+        greenInput.addEventListener('input', updateColor);
+        blueInput.addEventListener('input', updateColor);
+
+        redInput1.addEventListener('input', updateColor);
+        greenInput1.addEventListener('input', updateColor);
+        blueInput1.addEventListener('input', updateColor);
+    </script>
 </body>
 </html>
-
-
-
-
-
